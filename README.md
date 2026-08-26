@@ -5,7 +5,7 @@ A premium, interactive portfolio featuring dual-role experiences: **Full-Stack D
 ---
 
 ## 🌟 Live Demo & Repository
-- **GitHub Repository**: [https://github.com/abhijeet-rx/dual-portfolio](https://github.com/abhijeet-rx/dual-portfolio)
+- **GitHub Repository**: [https://github.com/abhijeet-rx/Portfolio](https://github.com/abhijeet-rx/Portfolio)
 
 ---
 
@@ -60,8 +60,10 @@ A premium, interactive portfolio featuring dual-role experiences: **Full-Stack D
 ## 👤 Author & Contact
 
 - **Name**: Abhijeet Singh
-- **Role**: Full-Stack Developer & Video Editor
-- **Education**: B.Tech in Computer Science & Engineering, VIT Amaravati (2023–2027)
+- **Role**: Full-Stack Developer &amp; Video Editor
+- **Education**: B.Tech in Computer Science &amp; Engineering, VIT Amaravati (2023–2027)
+- **Email**: [abhijeetrajput216@gmail.com](mailto:abhijeetrajput216@gmail.com)
+- **LinkedIn**: [linkedin.com/in/abhijeet-singh-3b6a39279](https://www.linkedin.com/in/abhijeet-singh-3b6a39279/)
 - **GitHub**: [github.com/abhijeet-rx](https://github.com/abhijeet-rx)
 
 ---
