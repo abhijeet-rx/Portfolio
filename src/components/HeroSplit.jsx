@@ -13,7 +13,7 @@ export default function HeroSplit() {
   return (
     <section className="hero-container">
       <TopBar />
-      
+
       <div className="divider"></div>
 
       {/* Left Split — Developer */}

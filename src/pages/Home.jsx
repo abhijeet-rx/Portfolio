@@ -45,7 +45,7 @@ export default function Home() {
     <>
       <Loader />
       <HeroSplit />
-      
+
       {/* About Me Section */}
       <section className="about-section">
         <div className="about-container">
