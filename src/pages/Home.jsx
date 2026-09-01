@@ -204,13 +204,14 @@ export default function Home() {
                   <p className="workplace">Vellore Institute of Technology (VIT), Amaravati</p>
                   <p>Contributing to academic and open-source projects, building real-world applications as part of coursework and personal development.</p>
                   <ul className="bullets">
-                    <li>✦ Recipe sharing platform (PHP + MySQL)</li>
-                    <li>✦ Expense tracker application</li>
-                    <li>✦ Personal portfolio website</li>
+                    <li>✦ DOT Field — Job intelligence &amp; ATS tailoring platform (Spring Boot + React)</li>
+                    <li>✦ Smart Resume Screener ATS analyzer</li>
+                    <li>✦ Personal dual-identity portfolio website</li>
                   </ul>
                   <div className="skills">
-                    <span>PHP / MySQL</span>
-                    <span>JavaScript</span>
+                    <span>Java / Spring Boot</span>
+                    <span>React / Python</span>
+                    <span>PostgreSQL</span>
                     <span>Git / GitHub</span>
                   </div>
                 </div>
