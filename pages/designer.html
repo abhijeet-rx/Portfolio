@@ -84,14 +84,85 @@
     <section class="section" id="projects">
       <div class="section-header">
         <p class="section-eyebrow">Selected Work</p>
-        <h2 class="section-title">Visual Edits</h2>
+        <h2 class="section-title">Visual Edits &amp; Motion Design</h2>
       </div>
       <div class="projects-grid">
 
-        <!-- Design 1 -->
-        <div class="project-card" id="proj1">
+        <!-- Project 1 — Adonis Promotional Video (Featured) -->
+        <div class="project-card project-card-featured" id="proj1">
+          <div class="project-video-wrap">
+            <video
+              id="adonisVideo"
+              class="project-video"
+              controls
+              playsinline
+              preload="metadata"
+            >
+              <source src="../assets/videos/Adonis.mp4" type="video/mp4" />
+              <source src="/videos/Adonis.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video playback.
+            </video>
+
+            <!-- Video badge -->
+            <div class="video-badge">
+              <span class="badge-dot"></span>
+              <span>Featured Promo</span>
+            </div>
+
+            <!-- Custom Play Overlay -->
+            <div class="video-play-overlay" id="videoPlayOverlay" title="Click to play promotional video">
+              <div class="video-play-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+              <span class="video-play-hint">Watch Promotional Video</span>
+            </div>
+          </div>
+
           <div class="project-card-inner">
-            <div class="project-number">01</div>
+            <div class="project-card-top-row">
+              <div class="project-number">01</div>
+              <div class="project-status">
+                <span class="status-dot"></span> Official Promo
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">Motion Graphics</span>
+              <span class="project-tag">Product Promo</span>
+              <span class="project-tag">Kinetic Typography</span>
+              <span class="project-tag">After Effects</span>
+              <span class="project-tag">Sound Design</span>
+            </div>
+            <h3 class="project-name">ADONIS — Product Launch &amp; Promotional Showcase</h3>
+            <p class="project-desc">High-octane product launch and motion graphics showcase created for <strong>Adonis</strong> — a distributed workflow automation platform. Features dynamic kinetic typography, sleek dark UI visualizations, rhythmic beat-matched transitions, and ambient sound design to dramatize real-time execution pipelines, cron schedules, and webhook trigger architectures.</p>
+            <div class="project-actions">
+              <button class="proj-btn proj-btn-accent" id="adonisPlayTrigger" type="button">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+                <span>Watch Promo</span>
+              </button>
+              <a href="https://github.com/abhijeet-rx/Adonis" class="proj-btn" target="_blank" rel="noopener noreferrer">
+                <span>Adonis Engine</span> <span>↗</span>
+              </a>
+              <a href="../assets/videos/Adonis.mp4" target="_blank" download="Adonis_Promotional_Video.mp4" class="proj-btn" title="Download High-Res MP4">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download MP4</span>
+              </a>
+            </div>
+          </div>
+          <div class="project-card-glow"></div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" id="proj2">
+          <div class="project-card-inner">
+            <div class="project-number">02</div>
             <div class="project-meta">
               <span class="project-tag">After Effects</span>
               <span class="project-tag">Motion Design</span>
@@ -103,10 +174,10 @@
           <div class="project-card-glow"></div>
         </div>
 
-        <!-- Design 2 -->
-        <div class="project-card" id="proj2">
+        <!-- Project 3 -->
+        <div class="project-card" id="proj3">
           <div class="project-card-inner">
-            <div class="project-number">02</div>
+            <div class="project-number">03</div>
             <div class="project-meta">
               <span class="project-tag">Premiere Pro</span>
               <span class="project-tag">CapCut FX</span>

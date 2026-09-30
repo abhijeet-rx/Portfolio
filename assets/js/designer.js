@@ -86,3 +86,53 @@ window.addEventListener('scroll', () => {
         navbar.style.background = 'rgba(0,0,0,0.6)';
     }
 });
+
+// Video Player Interaction (Adonis Promotional Video)
+const adonisVideo = document.getElementById('adonisVideo');
+const videoPlayOverlay = document.getElementById('videoPlayOverlay');
+const adonisPlayTrigger = document.getElementById('adonisPlayTrigger');
+
+if (adonisVideo) {
+    if (videoPlayOverlay) {
+        videoPlayOverlay.addEventListener('click', () => {
+            adonisVideo.play().catch(() => {});
+        });
+    }
+
+    if (adonisPlayTrigger) {
+        adonisPlayTrigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            adonisVideo.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            if (adonisVideo.paused) {
+                adonisVideo.play().catch(() => {});
+            } else {
+                adonisVideo.pause();
+            }
+        });
+    }
+
+    adonisVideo.addEventListener('play', () => {
+        if (videoPlayOverlay) videoPlayOverlay.classList.add('is-playing');
+        if (adonisPlayTrigger) {
+            const span = adonisPlayTrigger.querySelector('span');
+            if (span) span.textContent = 'Pause Promo';
+        }
+    });
+
+    adonisVideo.addEventListener('pause', () => {
+        if (videoPlayOverlay) videoPlayOverlay.classList.remove('is-playing');
+        if (adonisPlayTrigger) {
+            const span = adonisPlayTrigger.querySelector('span');
+            if (span) span.textContent = 'Watch Promo';
+        }
+    });
+
+    adonisVideo.addEventListener('ended', () => {
+        if (videoPlayOverlay) videoPlayOverlay.classList.remove('is-playing');
+        if (adonisPlayTrigger) {
+            const span = adonisPlayTrigger.querySelector('span');
+            if (span) span.textContent = 'Watch Again';
+        }
+    });
+}
+
