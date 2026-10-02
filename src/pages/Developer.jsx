@@ -58,14 +58,45 @@ export default function Developer() {
         </div>
         <div className="projects-grid">
 
-          {/* Project 1 */}
+          {/* Project 1 — Adonis Visual Builder (Featured) */}
+          <div className="project-card project-card-featured-dev" id="projAdonis" style={{ opacity: 1, transform: 'none' }}>
+            <div className="project-img-wrap project-img-wrap-featured">
+              <img src="/images/adonis-visual-builder.png" alt="Adonis Visual Builder — Node-based workflow automation interface" className="project-img" />
+              <div className="project-img-overlay"></div>
+            </div>
+            <div className="project-card-inner">
+              <div className="project-card-top-row">
+                <div className="project-number">01</div>
+                <div className="project-status">
+                  <span className="status-dot"></span> Phase 3
+                </div>
+              </div>
+              <div className="project-meta">
+                <span className="project-tag">Full Stack</span>
+                <span className="project-tag">React</span>
+                <span className="project-tag">Node.js</span>
+                <span className="project-tag">Visual Builder</span>
+                <span className="project-tag">AI Integration</span>
+                <span className="project-tag">Workflow Engine</span>
+              </div>
+              <h3 className="project-name">ADONIS — Distributed Workflow Automation Platform</h3>
+              <p className="project-desc">A full-stack visual workflow builder that lets users design, execute, and monitor complex automation pipelines through a drag-and-drop node canvas. Features AI text generation nodes (OpenAI &amp; Gemini), HTTP request modules, structured JSON output, custom scripting blocks, prompt variable interpolation, and real-time execution pipelines with cron scheduling and webhook triggers.</p>
+              <div className="project-actions">
+                <a href="https://github.com/abhijeet-rx/Adonis" className="proj-btn" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                <a href="https://github.com/abhijeet-rx/Adonis" className="proj-btn proj-btn-accent" target="_blank" rel="noopener noreferrer">View Repository <span>↗</span></a>
+              </div>
+            </div>
+            <div className="project-card-glow"></div>
+          </div>
+
+          {/* Project 2 */}
           <div className="project-card" id="proj1" style={{ opacity: 1, transform: 'none' }}>
             <div className="project-img-wrap">
               <img src="/assets/images/project1.png" alt="Smart Resume Screener Preview" className="project-img" />
               <div className="project-img-overlay"></div>
             </div>
             <div className="project-card-inner">
-              <div className="project-number">01</div>
+              <div className="project-number">02</div>
               <div className="project-meta">
                 <span className="project-tag">Full Stack</span>
                 <span className="project-tag">React</span>
@@ -83,14 +114,14 @@ export default function Developer() {
             <div className="project-card-glow"></div>
           </div>
 
-          {/* Project 2 */}
+          {/* Project 3 */}
           <div className="project-card" id="proj2" style={{ opacity: 1, transform: 'none' }}>
             <div className="project-img-wrap">
               <img src="/assets/images/project2.png" alt="Dual Identity Portfolio Preview" className="project-img" />
               <div className="project-img-overlay"></div>
             </div>
             <div className="project-card-inner">
-              <div className="project-number">02</div>
+              <div className="project-number">03</div>
               <div className="project-status">
                 <span className="status-dot"></span> Live
               </div>
@@ -110,14 +141,14 @@ export default function Developer() {
             <div className="project-card-glow"></div>
           </div>
 
-          {/* Project 3 */}
+          {/* Project 4 */}
           <div className="project-card" id="proj3" style={{ opacity: 1, transform: 'none' }}>
             <div className="project-img-wrap">
               <img src="/assets/images/dotfield-dashboard.png" alt="DOT Field Platform Dashboard Preview" className="project-img" />
               <div className="project-img-overlay"></div>
             </div>
             <div className="project-card-inner">
-              <div className="project-number">03</div>
+              <div className="project-number">04</div>
               <div className="project-status">
                 <span className="status-dot"></span> Live
               </div>
