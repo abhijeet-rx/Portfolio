@@ -6,6 +6,8 @@ import '../styles/designer.css'
 export default function Designer() {
   const videoRef = useRef(null)
   const [isPlaying, setIsPlaying] = useState(false)
+  const dotfieldRef = useRef(null)
+  const [isDotfieldPlaying, setIsDotfieldPlaying] = useState(true)
 
   const togglePlay = () => {
     if (videoRef.current) {
@@ -22,6 +24,24 @@ export default function Designer() {
     if (videoRef.current) {
       videoRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
       togglePlay()
+    }
+  }
+
+  const toggleDotfieldPlay = () => {
+    if (dotfieldRef.current) {
+      if (dotfieldRef.current.paused) {
+        dotfieldRef.current.play().catch(() => {})
+      } else {
+        dotfieldRef.current.pause()
+      }
+    }
+  }
+
+  const handleDotfieldPlayTrigger = (e) => {
+    e.preventDefault()
+    if (dotfieldRef.current) {
+      dotfieldRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      toggleDotfieldPlay()
     }
   }
 
@@ -158,17 +178,89 @@ export default function Designer() {
             <div className="project-card-glow"></div>
           </div>
 
-          {/* Project 2 */}
-          <div className="project-card" id="proj2" style={{ opacity: 1, transform: 'none' }}>
-            <div className="project-card-inner">
-              <div className="project-number">02</div>
-              <div className="project-meta">
-                <span className="project-tag">After Effects</span>
-                <span className="project-tag">Motion Design</span>
-                <span className="project-tag">Typography</span>
+          {/* Project 2 — DOT FIELD Motion Loop (Featured) */}
+          <div className="project-card project-card-featured project-card-square" id="proj2" style={{ opacity: 1, transform: 'none' }}>
+            <div className="project-video-wrap square-video-wrap">
+              <video
+                ref={dotfieldRef}
+                id="dotfieldVideo"
+                className="project-video"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+                onPlay={() => setIsDotfieldPlaying(true)}
+                onPause={() => setIsDotfieldPlaying(false)}
+              >
+                <source src="/videos/dotfield_motion_loop.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video playback.
+              </video>
+
+              <div className="video-badge badge-cyan">
+                <span className="badge-dot dot-cyan"></span>
+                <span>Motion Loop</span>
               </div>
-              <h3 className="project-name">NEON VELOCITY — After Effects Reel</h3>
-              <p className="project-desc">High-octane motion graphics reel featuring fast keyframed typography, glowing neon line accents, and rhythmic bass-hit sound design.</p>
+
+              <div
+                className={`video-play-overlay ${isDotfieldPlaying ? 'is-playing' : ''}`}
+                onClick={toggleDotfieldPlay}
+                title="Click to pause/play motion loop"
+              >
+                <div className="video-play-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+                <span className="video-play-hint">Watch Motion Loop</span>
+              </div>
+            </div>
+
+            <div className="project-card-inner">
+              <div className="project-card-top-row">
+                <div className="project-number">02</div>
+                <div className="project-status status-cyan">
+                  <span className="status-dot dot-cyan"></span> Motion Loop
+                </div>
+              </div>
+              <div className="project-meta">
+                <span className="project-tag">Motion Graphics</span>
+                <span className="project-tag">Brand Identity</span>
+                <span className="project-tag">Kinetic Loop</span>
+                <span className="project-tag">After Effects</span>
+                <span className="project-tag">1440x1440</span>
+              </div>
+              <h3 className="project-name">DOT FIELD — Kinetic Brand Motion Loop</h3>
+              <p className="project-desc">
+                Seamless 1:1 motion loop created for the <strong>DOT Field</strong> job discovery platform. Combines precision vector dynamics, cybernetic neon accents, and rhythmic typography loops built in After Effects to deliver a mesmerizing brand visual identity.
+              </p>
+              <div className="project-actions">
+                <button className="proj-btn proj-btn-accent" onClick={handleDotfieldPlayTrigger} type="button">
+                  {isDotfieldPlaying ? (
+                    <>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                      </svg>
+                      <span>Pause Loop</span>
+                    </>
+                  ) : (
+                    <>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
+                      </svg>
+                      <span>Play Loop</span>
+                    </>
+                  )}
+                </button>
+                <a href="/videos/dotfield_motion_loop.mp4" target="_blank" download="DOT_Field_Motion_Loop.mp4" className="proj-btn" title="Download High-Res 1440x1440 MP4">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  <span>Download MP4</span>
+                </a>
+              </div>
             </div>
             <div className="project-card-glow"></div>
           </div>

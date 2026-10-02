@@ -136,3 +136,56 @@ if (adonisVideo) {
     });
 }
 
+// Video Player Interaction (DOT Field Motion Loop)
+const dotfieldVideo = document.getElementById('dotfieldVideo');
+const dotfieldPlayOverlay = document.getElementById('dotfieldPlayOverlay');
+const dotfieldPlayTrigger = document.getElementById('dotfieldPlayTrigger');
+
+if (dotfieldVideo) {
+    if (dotfieldPlayOverlay) {
+        dotfieldPlayOverlay.addEventListener('click', () => {
+            if (dotfieldVideo.paused) {
+                dotfieldVideo.play().catch(() => {});
+            } else {
+                dotfieldVideo.pause();
+            }
+        });
+    }
+
+    if (dotfieldPlayTrigger) {
+        dotfieldPlayTrigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            dotfieldVideo.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            if (dotfieldVideo.paused) {
+                dotfieldVideo.play().catch(() => {});
+            } else {
+                dotfieldVideo.pause();
+            }
+        });
+    }
+
+    dotfieldVideo.addEventListener('play', () => {
+        if (dotfieldPlayOverlay) dotfieldPlayOverlay.classList.add('is-playing');
+        if (dotfieldPlayTrigger) {
+            dotfieldPlayTrigger.innerHTML = `
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                </svg>
+                <span>Pause Loop</span>
+            `;
+        }
+    });
+
+    dotfieldVideo.addEventListener('pause', () => {
+        if (dotfieldPlayOverlay) dotfieldPlayOverlay.classList.remove('is-playing');
+        if (dotfieldPlayTrigger) {
+            dotfieldPlayTrigger.innerHTML = `
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+                <span>Play Loop</span>
+            `;
+        }
+    });
+}
+

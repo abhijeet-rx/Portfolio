@@ -159,17 +159,72 @@
           <div class="project-card-glow"></div>
         </div>
 
-        <!-- Project 2 -->
-        <div class="project-card" id="proj2">
-          <div class="project-card-inner">
-            <div class="project-number">02</div>
-            <div class="project-meta">
-              <span class="project-tag">After Effects</span>
-              <span class="project-tag">Motion Design</span>
-              <span class="project-tag">Typography</span>
+        <!-- Project 2 — DOT FIELD Motion Loop (Featured) -->
+        <div class="project-card project-card-featured project-card-square" id="proj2">
+          <div class="project-video-wrap square-video-wrap">
+            <video
+              id="dotfieldVideo"
+              class="project-video"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="metadata"
+            >
+              <source src="../assets/videos/dotfield_motion_loop.mp4" type="video/mp4" />
+              <source src="/videos/dotfield_motion_loop.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video playback.
+            </video>
+
+            <!-- Video badge -->
+            <div class="video-badge badge-cyan">
+              <span class="badge-dot dot-cyan"></span>
+              <span>Motion Loop</span>
             </div>
-            <h3 class="project-name">NEON VELOCITY — After Effects Reel</h3>
-            <p class="project-desc">High-octane motion graphics reel featuring fast keyframed typography, glowing neon line accents, and rhythmic bass-hit sound design.</p>
+
+            <!-- Custom Play Overlay -->
+            <div class="video-play-overlay is-playing" id="dotfieldPlayOverlay" title="Click to pause/play motion loop">
+              <div class="video-play-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+              <span class="video-play-hint">Watch Motion Loop</span>
+            </div>
+          </div>
+
+          <div class="project-card-inner">
+            <div class="project-card-top-row">
+              <div class="project-number">02</div>
+              <div class="project-status status-cyan">
+                <span class="status-dot dot-cyan"></span> Motion Loop
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">Motion Graphics</span>
+              <span class="project-tag">Brand Identity</span>
+              <span class="project-tag">Kinetic Loop</span>
+              <span class="project-tag">After Effects</span>
+              <span class="project-tag">1440x1440</span>
+            </div>
+            <h3 class="project-name">DOT FIELD — Kinetic Brand Motion Loop</h3>
+            <p class="project-desc">Seamless 1:1 motion loop created for the <strong>DOT Field</strong> job discovery platform. Combines precision vector dynamics, cybernetic neon accents, and rhythmic typography loops built in After Effects to deliver a mesmerizing brand visual identity.</p>
+            <div class="project-actions">
+              <button class="proj-btn proj-btn-accent" id="dotfieldPlayTrigger" type="button">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                </svg>
+                <span>Pause Loop</span>
+              </button>
+              <a href="../assets/videos/dotfield_motion_loop.mp4" target="_blank" download="DOT_Field_Motion_Loop.mp4" class="proj-btn" title="Download High-Res 1440x1440 MP4">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download MP4</span>
+              </a>
+            </div>
           </div>
           <div class="project-card-glow"></div>
         </div>
