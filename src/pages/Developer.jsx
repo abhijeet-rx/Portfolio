@@ -89,14 +89,110 @@ export default function Developer() {
             <div className="project-card-glow"></div>
           </div>
 
-          {/* Project 2 */}
+          {/* Project 2 — Zixie */}
+          <div className="project-card" id="projZixie" style={{ opacity: 1, transform: 'none' }}>
+            <div className="project-img-wrap">
+              <img src="/images/zixie-preview.png" alt="Zixie — Code Plagiarism, Collusion &amp; AI Detection Platform" className="project-img" />
+              <div className="project-img-overlay"></div>
+            </div>
+            <div className="project-card-inner">
+              <div className="project-card-top-row">
+                <div className="project-number">02</div>
+                <div className="project-status">
+                  <span className="status-dot"></span> Live
+                </div>
+              </div>
+              <div className="project-meta">
+                <span className="project-tag">TypeScript</span>
+                <span className="project-tag">React 19</span>
+                <span className="project-tag">Fastify</span>
+                <span className="project-tag">Tailwind</span>
+                <span className="project-tag">Algorithms</span>
+                <span className="project-tag">AI Detection</span>
+              </div>
+              <h3 className="project-name">ZIXIE — Code Plagiarism, Collusion &amp; AI Detection</h3>
+              <p className="project-desc">Automated code integrity and collusion ring analysis engine for technical assessments. Uncovers evasion techniques using lexical token masking, MOSS-style Winnowing, RKR-GST greedy string tiling, Union-Find clustering, and an interactive split-screen diff viewer.</p>
+              <div className="project-actions">
+                <a href="https://github.com/abhijeet-rx/zixie" className="proj-btn" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                <a href="https://github.com/abhijeet-rx/zixie" className="proj-btn proj-btn-accent" target="_blank" rel="noopener noreferrer">View Repository <span>↗</span></a>
+              </div>
+            </div>
+            <div className="project-card-glow"></div>
+          </div>
+
+          {/* Project 3 — Kenobi */}
+          <div className="project-card" id="projKenobi" style={{ opacity: 1, transform: 'none' }}>
+            <div className="project-img-wrap">
+              <img src="/images/kenobi-preview.png" alt="Kenobi — Acoustic Desk Surface Interaction Suite" className="project-img" />
+              <div className="project-img-overlay"></div>
+            </div>
+            <div className="project-card-inner">
+              <div className="project-card-top-row">
+                <div className="project-number">03</div>
+                <div className="project-status">
+                  <span className="status-dot"></span> Live
+                </div>
+              </div>
+              <div className="project-meta">
+                <span className="project-tag">Python</span>
+                <span className="project-tag">PyQt6</span>
+                <span className="project-tag">Audio DSP</span>
+                <span className="project-tag">Signal Processing</span>
+                <span className="project-tag">Win32 API</span>
+              </div>
+              <h3 className="project-name">KENOBI — Acoustic Desk Surface Interaction Suite</h3>
+              <p className="project-desc">Turns laptop-flanking desk space into an acoustic touch surface using built-in stereo microphones. Features transient energy arrival localization (Left vs. Right taps), typing suppression guards, spectral keyboard click rejection, a floating HUD overlay, and system macro triggers.</p>
+              <div className="project-actions">
+                <a href="https://github.com/abhijeet-rx/Kenobi" className="proj-btn" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                <a href="https://github.com/abhijeet-rx/Kenobi" className="proj-btn proj-btn-accent" target="_blank" rel="noopener noreferrer">View Repository <span>↗</span></a>
+              </div>
+            </div>
+            <div className="project-card-glow"></div>
+          </div>
+
+          {/* Project 4 — DOT Field */}
+          <div className="project-card" id="proj3" style={{ opacity: 1, transform: 'none' }}>
+            <div className="project-img-wrap">
+              <img src="/assets/images/dotfield-dashboard.png" alt="DOT Field Platform Dashboard Preview" className="project-img" />
+              <div className="project-img-overlay"></div>
+            </div>
+            <div className="project-card-inner">
+              <div className="project-card-top-row">
+                <div className="project-number">04</div>
+                <div className="project-status">
+                  <span className="status-dot"></span> Live
+                </div>
+              </div>
+              <div className="project-meta">
+                <span className="project-tag">Spring Boot 3</span>
+                <span className="project-tag">Java 21</span>
+                <span className="project-tag">React 19</span>
+                <span className="project-tag">PostgreSQL</span>
+                <span className="project-tag">REST APIs</span>
+              </div>
+              <h3 className="project-name">DOT Field — Job Intelligence Platform</h3>
+              <p className="project-desc">India-first multi-source job discovery &amp; requirement analysis engine with SHA-256 fingerprint deduplication, 4-dimension candidate fit scoring, and automated ATS resume tailoring.</p>
+              <div className="project-actions">
+                <a href="https://github.com/abhijeet-rx/Dot-field-" className="proj-btn" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                <a href="https://github.com/abhijeet-rx/Dot-field-" className="proj-btn proj-btn-accent" target="_blank" rel="noopener noreferrer">View Repository <span>↗</span></a>
+              </div>
+            </div>
+            <div className="project-card-glow"></div>
+          </div>
+
+          {/* Project 5 — Smart Resume Screener */}
           <div className="project-card" id="proj1" style={{ opacity: 1, transform: 'none' }}>
             <div className="project-img-wrap">
               <img src="/assets/images/project1.png" alt="Smart Resume Screener Preview" className="project-img" />
               <div className="project-img-overlay"></div>
             </div>
             <div className="project-card-inner">
-              <div className="project-number">02</div>
+              <div className="project-card-top-row">
+                <div className="project-number">05</div>
+                <div className="project-status">
+                  <span className="status-dot"></span> Live
+                </div>
+              </div>
               <div className="project-meta">
                 <span className="project-tag">Full Stack</span>
                 <span className="project-tag">React</span>
@@ -114,16 +210,18 @@ export default function Developer() {
             <div className="project-card-glow"></div>
           </div>
 
-          {/* Project 3 */}
+          {/* Project 6 — Dual Identity Portfolio */}
           <div className="project-card" id="proj2" style={{ opacity: 1, transform: 'none' }}>
             <div className="project-img-wrap">
               <img src="/assets/images/project2.png" alt="Dual Identity Portfolio Preview" className="project-img" />
               <div className="project-img-overlay"></div>
             </div>
             <div className="project-card-inner">
-              <div className="project-number">03</div>
-              <div className="project-status">
-                <span className="status-dot"></span> Live
+              <div className="project-card-top-row">
+                <div className="project-number">06</div>
+                <div className="project-status">
+                  <span className="status-dot"></span> Live
+                </div>
               </div>
               <div className="project-meta">
                 <span className="project-tag">Next.js</span>
@@ -136,34 +234,6 @@ export default function Developer() {
               <div className="project-actions">
                 <a href="https://github.com/abhijeet-rx/dual-portfolio" className="proj-btn" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
                 <a href="http://localhost:3000" className="proj-btn proj-btn-accent" target="_blank" rel="noopener noreferrer">Live Demo <span>↗</span></a>
-              </div>
-            </div>
-            <div className="project-card-glow"></div>
-          </div>
-
-          {/* Project 4 */}
-          <div className="project-card" id="proj3" style={{ opacity: 1, transform: 'none' }}>
-            <div className="project-img-wrap">
-              <img src="/assets/images/dotfield-dashboard.png" alt="DOT Field Platform Dashboard Preview" className="project-img" />
-              <div className="project-img-overlay"></div>
-            </div>
-            <div className="project-card-inner">
-              <div className="project-number">04</div>
-              <div className="project-status">
-                <span className="status-dot"></span> Live
-              </div>
-              <div className="project-meta">
-                <span className="project-tag">Spring Boot 3</span>
-                <span className="project-tag">Java 21</span>
-                <span className="project-tag">React 19</span>
-                <span className="project-tag">PostgreSQL</span>
-                <span className="project-tag">REST APIs</span>
-              </div>
-              <h3 className="project-name">DOT Field — Job Intelligence Platform</h3>
-              <p className="project-desc">India-first multi-source job discovery &amp; requirement analysis engine with SHA-256 fingerprint deduplication, 4-dimension candidate fit scoring, and automated ATS resume tailoring.</p>
-              <div className="project-actions">
-                <a href="https://github.com/abhijeet-rx/Dot-field-" className="proj-btn" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
-                <a href="https://github.com/abhijeet-rx/Dot-field-" className="proj-btn proj-btn-accent" target="_blank" rel="noopener noreferrer">View Repository <span>↗</span></a>
               </div>
             </div>
             <div className="project-card-glow"></div>
